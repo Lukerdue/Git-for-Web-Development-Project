@@ -1,0 +1,135 @@
+https://codepen.io/jamie-jenks/pen/MWwrMYq?editors=1100
+
+    1. What is Semantic HTML? 
+        HTML that gives meaning to our content. Navs, footers, etc.
+
+    2. What is HTML used for? 
+        HTML is used to put content on a webpage.
+
+    3. What is an attribute and where do we put it?
+        An attribute is an identifier or additional info for a peice of content.
+        It is in the opening tag for that content.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+        The h1 tag is used for the heading of a page, and should only be used once.
+
+    5. Name two tags that have required attributes
+        <img> and <a>
+
+    6. What do we put in the head of our HTML document? 
+        Meta-data? Stuff for the browser to know what's goin on.
+    7. What is an id? 
+        and id is an attribute that's more specific than a class.
+    8. What elements can I add an id to? 
+        all of them.
+    9. How many times can I use the same id on a page? 
+        once.
+    10. What is a class? 
+        a class is an attribute you can use to classify objects.
+    11. What elements can I add a class to? 
+        all of them.
+    12. How many times can I use the same class on a page? 
+        as much as you want.
+    13. How do I get my link to open in a new tab?
+        add target='_blank' to the <a> tag.
+    14. What is the alt attribute used for? 
+        alternative text to be rendered in place of an image (or for a screen reader)
+    15. How do I reference an id?
+        #{id name}
+    16. What is the difference between a section and a div
+        a section creates a new section of the webpage, a div just divides things into containters.
+    17. What is CSS used for? 
+        CSS is used to style html.
+    18. How to we select an element? Example - every h2 on the page
+        h2{
+        }
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        Id's are more specific than classes, and you can only use id's once. If you want lots of things to be pointed to,
+        use a class, but if there's one thing in that class you want to point to on it's own, use an id.
+    20. How do we select classes in CSS?
+        .classname{
+
+        }
+    21. How do we select a p element with a single class of “human””?
+        p .human{
+
+        }
+    22. What is a parent child selector? When would this be useful? 
+        a parent chile selector tells your css that the child's code is more important than the parents.
+        in the example i used one to tell a child not to change when the parent is moused over,
+        so that i could have it change by itself once it was moused over.
+    23. How do you select all links within a div with the class of sidebar?
+        a .sidebar{
+
+        }
+    24. What is a pseudo selector?
+        a pseudo selector tells css to do something once its requirement has been met. Like a hover or a visited.
+    25. What do we use the change the spacing between lines?
+        line-height: height.
+    26. What do we use to change the spacing between letters?
+        letter-spacing: value;
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        text-transform: uppercase,
+        text-transform: lowecase,
+        text-transform: capitalize,
+    28. How do I add a 1px border around my div that is dotted and black?
+        div{
+            border: 1px dotted black;
+        }
+    29. How do I select everything on the page? 
+        body{
+
+        }
+    30. How do I write a comment in CSS?
+        /*
+        comment
+        */
+    31. How do I find out what file I am in, when I am using the command line? 
+        pwd
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+        ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        rm. It doesn't give you a warning, and the file is gone forever.
+    34. Why should I use version control? 
+        It tracks all your changes, in case someone makes a change that breaks their code,
+        and doesn't know how to fix it, they can go back to a version that worked.
+    35. How often should I commit to github?
+        everytime progress is made, or every 20 minutes-ish
+    36. What is the command we would use to push our repo up to github? 
+        git push
+    37. Walk me through Lambda's git flow. 
+            a. Fork your repo on GitHub
+            b. add TL collaberator.
+            c. clone your forked repo in terminal (git clone <url>)
+            d. enter the file.(cd <filename>)
+            e. create a branch(git checkout -b "branchname")
+            f. Do whatever you need to do in the assignment.
+            g. add your files (git add .)
+            h. commit your files (git commit -m'messageHere')
+            i. push (git push origin -u <branchname>)
+            j. submit pullrequest on Github
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    inline elements won't create a break in the content, and will be displayed next to the previous element.
+    Block elements typically will create a new line on content
+    2. What happens when an element is positioned absolutely? 
+        they're positioned relative to their ancestor or (if they don't have one) to the body, and will move with the viewport.
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+        display: inline-block?
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+        a. block
+            1. div
+            2. p
+            3. h1-h6
+        b. inline
+            1. span.
+            2. img.
+        c. inline-block
+            1. nav?
+    5. In your own words, explain the box model. What is the fix for the box model? 
+    elements have padding, borders, and margins. padding and margins are usually added automatically without the css,
+    and they change the overall size of the element, not just the content. The alleged fix for this is box-sizing: border-box,
+    which takes padding and border into account when setting dimensions for something on the webpage. (you still need to think
+    about margins though)
